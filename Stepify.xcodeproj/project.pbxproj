@@ -3,27 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5845D2E92A34D47C0070E309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845D2E82A34D47C0070E309 /* AppDelegate.swift */; };
 		5845D2EB2A34D47C0070E309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845D2EA2A34D47C0070E309 /* SceneDelegate.swift */; };
-		5845D2ED2A34D47C0070E309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845D2EC2A34D47C0070E309 /* ViewController.swift */; };
+		5845D2ED2A34D47C0070E309 /* StepCountVieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845D2EC2A34D47C0070E309 /* StepCountVieController.swift */; };
 		5845D2F02A34D47C0070E309 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5845D2EE2A34D47C0070E309 /* Main.storyboard */; };
 		5845D2F22A34D47D0070E309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5845D2F12A34D47D0070E309 /* Assets.xcassets */; };
 		5845D2F52A34D47D0070E309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5845D2F32A34D47D0070E309 /* LaunchScreen.storyboard */; };
+		5845D3052A3617F10070E309 /* ChooseDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845D3042A3617F00070E309 /* ChooseDateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5845D2E52A34D47C0070E309 /* Stepify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stepify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5845D2E82A34D47C0070E309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5845D2EA2A34D47C0070E309 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5845D2EC2A34D47C0070E309 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5845D2EC2A34D47C0070E309 /* StepCountVieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountVieController.swift; sourceTree = "<group>"; };
 		5845D2EF2A34D47C0070E309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5845D2F12A34D47D0070E309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5845D2F42A34D47D0070E309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5845D2F62A34D47D0070E309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5845D3032A35B3CA0070E309 /* Stepify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stepify.entitlements; sourceTree = "<group>"; };
+		5845D3042A3617F00070E309 /* ChooseDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +59,65 @@
 		5845D2E72A34D47C0070E309 /* Stepify */ = {
 			isa = PBXGroup;
 			children = (
-				5845D2E82A34D47C0070E309 /* AppDelegate.swift */,
-				5845D2EA2A34D47C0070E309 /* SceneDelegate.swift */,
-				5845D2EC2A34D47C0070E309 /* ViewController.swift */,
-				5845D2EE2A34D47C0070E309 /* Main.storyboard */,
-				5845D2F12A34D47D0070E309 /* Assets.xcassets */,
-				5845D2F32A34D47D0070E309 /* LaunchScreen.storyboard */,
+				5845D3032A35B3CA0070E309 /* Stepify.entitlements */,
+				5845D2FE2A34D6730070E309 /* Resources */,
+				5845D2FC2A34D5C30070E309 /* Model */,
+				5845D2FF2A34D68D0070E309 /* View */,
+				5845D3012A34D7410070E309 /* Application */,
 				5845D2F62A34D47D0070E309 /* Info.plist */,
 			);
 			path = Stepify;
+			sourceTree = "<group>";
+		};
+		5845D2FC2A34D5C30070E309 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5845D2FE2A34D6730070E309 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5845D2F12A34D47D0070E309 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5845D2FF2A34D68D0070E309 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5845D3022A35AEF20070E309 /* Controller */,
+				5845D3002A34D6AB0070E309 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5845D3002A34D6AB0070E309 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5845D2F32A34D47D0070E309 /* LaunchScreen.storyboard */,
+				5845D2EE2A34D47C0070E309 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5845D3012A34D7410070E309 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5845D2EA2A34D47C0070E309 /* SceneDelegate.swift */,
+				5845D2E82A34D47C0070E309 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5845D3022A35AEF20070E309 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5845D2EC2A34D47C0070E309 /* StepCountVieController.swift */,
+				5845D3042A3617F00070E309 /* ChooseDateViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +156,7 @@
 				};
 			};
 			buildConfigurationList = 5845D2E02A34D47C0070E309 /* Build configuration list for PBXProject "Stepify" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,9 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5845D2ED2A34D47C0070E309 /* ViewController.swift in Sources */,
+				5845D2ED2A34D47C0070E309 /* StepCountVieController.swift in Sources */,
 				5845D2E92A34D47C0070E309 /* AppDelegate.swift in Sources */,
 				5845D2EB2A34D47C0070E309 /* SceneDelegate.swift in Sources */,
+				5845D3052A3617F10070E309 /* ChooseDateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,8 +339,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCH2JZL7P2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stepify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,6 +357,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Suvendu-Kumar.Stepify";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,8 +371,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Stepify/Stepify.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCH2JZL7P2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Stepify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +389,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Suvendu-Kumar.Stepify";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
