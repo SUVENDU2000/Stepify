@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DfD-Wh-dN6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DfD-Wh-dN6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -176,25 +176,32 @@
                                     <action selector="didTappedSaveDateButtton:" destination="1yJ-fI-3bR" eventType="touchUpInside" id="kfF-mH-mZA"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.3.horizontal.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-gJ-1Xe">
-                                <rect key="frame" x="181.66666666666666" y="70" width="30" height="18.666666666666671"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogiIcon" translatesAutoresizingMaskIntoConstraints="NO" id="kWg-Lw-pD4">
+                                <rect key="frame" x="116.66666666666669" y="115" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Uhe-lV-ODY"/>
-                                    <constraint firstAttribute="height" constant="20" id="fkB-kC-q3a"/>
+                                    <constraint firstAttribute="width" constant="160" id="dDx-0P-IHJ"/>
+                                    <constraint firstAttribute="height" constant="160" id="lUr-lg-ymC"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chose a date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0y-QR-89d">
+                                <rect key="frame" x="142.66666666666666" y="285" width="108" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6W7-FN-jWA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="I0y-QR-89d" firstAttribute="centerX" secondItem="ilP-4x-rX5" secondAttribute="centerX" id="7qg-Ua-WUG"/>
                             <constraint firstItem="UWb-7M-kbE" firstAttribute="centerX" secondItem="ilP-4x-rX5" secondAttribute="centerX" id="Bfa-3w-D1D"/>
-                            <constraint firstItem="dgs-gJ-1Xe" firstAttribute="top" secondItem="6W7-FN-jWA" secondAttribute="top" constant="10" id="FJG-Zy-xuA"/>
                             <constraint firstItem="6W7-FN-jWA" firstAttribute="trailing" secondItem="UWb-7M-kbE" secondAttribute="trailing" constant="20" id="ISU-7I-KrO"/>
+                            <constraint firstItem="kWg-Lw-pD4" firstAttribute="centerX" secondItem="ilP-4x-rX5" secondAttribute="centerX" id="MuF-dd-aU3"/>
                             <constraint firstItem="UWb-7M-kbE" firstAttribute="centerY" secondItem="ilP-4x-rX5" secondAttribute="centerY" id="Myx-Tb-w2t"/>
+                            <constraint firstItem="UWb-7M-kbE" firstAttribute="top" secondItem="I0y-QR-89d" secondAttribute="bottom" constant="20" id="Red-F9-Ucb"/>
                             <constraint firstItem="gtC-Ib-nc1" firstAttribute="centerX" secondItem="ilP-4x-rX5" secondAttribute="centerX" id="cX5-hF-9Zk"/>
+                            <constraint firstItem="I0y-QR-89d" firstAttribute="top" secondItem="kWg-Lw-pD4" secondAttribute="bottom" constant="10" id="dAs-yq-Vji"/>
                             <constraint firstItem="UWb-7M-kbE" firstAttribute="leading" secondItem="ilP-4x-rX5" secondAttribute="leading" constant="20" id="hRU-ov-MyE"/>
-                            <constraint firstItem="dgs-gJ-1Xe" firstAttribute="centerX" secondItem="ilP-4x-rX5" secondAttribute="centerX" id="kiO-TU-bhH"/>
                             <constraint firstItem="6W7-FN-jWA" firstAttribute="bottom" secondItem="gtC-Ib-nc1" secondAttribute="bottom" constant="20" id="odA-75-51Q"/>
                         </constraints>
                     </view>
@@ -205,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U21-Ej-xKM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1973" y="4"/>
+            <point key="canvasLocation" x="1971.7557251908397" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Co-Rn-hT1">
@@ -227,10 +234,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="line.3.horizontal.circle" catalog="system" width="128" height="123"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="AppLogiIcon" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

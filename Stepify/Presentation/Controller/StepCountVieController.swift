@@ -77,7 +77,7 @@ class StepCountVieController: UIViewController {
         
         let query = HKSampleQuery(sampleType: sampleType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { (query, results, error) in
             if let samples = results as? [HKQuantitySample] {
-                let totalStepCount = samples.reduce(0.0) { $0 + $1.quantity.doubleValue(for: HKUnit.count()) }
+                let totalStepCount = samples.reduce(0) { $0 + $1.quantity.doubleValue(for: HKUnit.count()) }
                 completion(totalStepCount, nil)
             } else {
                 completion(nil, error)

@@ -60,10 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				5845D3032A35B3CA0070E309 /* Stepify.entitlements */,
+				5845D3012A34D7410070E309 /* Application */,
 				5845D2FE2A34D6730070E309 /* Resources */,
 				5845D2FC2A34D5C30070E309 /* Model */,
-				5845D2FF2A34D68D0070E309 /* View */,
-				5845D3012A34D7410070E309 /* Application */,
+				5845D2FF2A34D68D0070E309 /* Presentation */,
 				5845D2F62A34D47D0070E309 /* Info.plist */,
 			);
 			path = Stepify;
@@ -84,22 +84,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		5845D2FF2A34D68D0070E309 /* View */ = {
+		5845D2FF2A34D68D0070E309 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				5845D3022A35AEF20070E309 /* Controller */,
-				5845D3002A34D6AB0070E309 /* Storyboard */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		5845D3002A34D6AB0070E309 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				5845D2F32A34D47D0070E309 /* LaunchScreen.storyboard */,
-				5845D2EE2A34D47C0070E309 /* Main.storyboard */,
-			);
-			path = Storyboard;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		5845D3012A34D7410070E309 /* Application */ = {
@@ -114,6 +104,8 @@
 		5845D3022A35AEF20070E309 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5845D2F32A34D47D0070E309 /* LaunchScreen.storyboard */,
+				5845D2EE2A34D47C0070E309 /* Main.storyboard */,
 				5845D2EC2A34D47C0070E309 /* StepCountVieController.swift */,
 				5845D3042A3617F00070E309 /* ChooseDateViewController.swift */,
 			);
